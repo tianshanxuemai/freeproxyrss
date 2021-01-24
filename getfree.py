@@ -17,3 +17,11 @@ if info.status_code == 200:
         f.write(info.text)
 else:
     print (f'{today} no data')
+
+url = f'https://proxypoolss.tk/clash/proxies'
+info = requests.get(url)
+if info.status_code == 200:
+    with open('r03.yml', 'w', encoding = 'UTF-8') as f:
+        f.write(info.text)
+else:
+    print (f'{today} no data')
