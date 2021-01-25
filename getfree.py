@@ -30,6 +30,6 @@ url = f'https://subcon.dlj.tf/sub?target=clash&url=https%3A%2F%2Fraw.githubuserc
 info4 = requests.get(url)
 if info4.status_code == 200:
     with open('free04.yml', 'w', encoding = 'UTF-8') as f:
-        f.write(info3.text)
+        f.write(info4.text)
 else:
     print (f'f04 no data')
