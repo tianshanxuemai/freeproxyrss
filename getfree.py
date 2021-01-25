@@ -25,3 +25,11 @@ if info3.status_code == 200:
         f.write(info3.text)
 else:
     print (f'f03 no data')
+    
+url = f'https://subcon.dlj.tf/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fjsnjsnwbtwbt%2FTEzNC1jOTY1ZGE5OWM1ZT%2Fmain%2FStable'
+info4 = requests.get(url)
+if info4.status_code == 200:
+    with open('free04.yml', 'w', encoding = 'UTF-8') as f:
+        f.write(info3.text)
+else:
+    print (f'f04 no data')
