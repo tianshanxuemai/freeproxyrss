@@ -1,8 +1,7 @@
-import time
+from datetime import datetime, date, timedelta
 import requests
-today = time.strftime("%m%d")
-
-url = f'https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/{today-1}clash.yml'
+yesterday = (date.today() + timedelta(days = -1)).strftime("%m%d")
+url = f'https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/{yesterday}clash.yml'
 info1 = requests.get(url)
 if info1.status_code == 200:
     with open('free01.yml', 'w', encoding = 'UTF-8') as f:
