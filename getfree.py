@@ -2,7 +2,7 @@ import time
 import requests
 today = time.strftime("%m%d")
 
-url = f'https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/{today}clash.yml'
+url = f'https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/{today-1}clash.yml'
 info1 = requests.get(url)
 if info1.status_code == 200:
     with open('free01.yml', 'w', encoding = 'UTF-8') as f:
