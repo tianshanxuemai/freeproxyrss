@@ -1490,6 +1490,7 @@ rules:
  - DOMAIN,analytics.strava.com,🎯 全球直连
  - DOMAIN,msg.umeng.com,🎯 全球直连
  - DOMAIN,msg.umengcloud.com,🎯 全球直连
+ - DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao-b.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mcupdate.gstarcad.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adx.open-adx.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adservice.sigmob.cn,🛑 全球拦截
